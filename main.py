@@ -13,7 +13,7 @@ def init(): #initialize the app
     #setup window
     global root #globalize the root
     root = Tk() #create main window
-    root.config(bg='white') #set the bg color to a nice grey color
+    root.config(bg='#FAF9F6') #set the bg color to a nice grey color
     root.title('Python Dictionary GUI') #give the window a title
     root.geometry('500x350') #resize the window
     root.iconbitmap('D:\Python\Python-Dictionary-GUI\icon.ico') #give the window a nice icon
@@ -368,7 +368,7 @@ def menu(): #menu
         root, #in the root window
         text='Python Dictionary', #the title
         font=titlefont, #load the font style
-        bg='white', #bg same as the window
+        bg='#FAF9F6', #bg same as the window
         fg='#757575' #fg is #757575
         )
 
@@ -419,7 +419,7 @@ def menu(): #menu
     title.place(x=115,y=20) #place the title label
     searchframe.place(x=80,y=130) #place the frame of the search box
     search_input.place(x=82,y=132,height=60) #place the search box
-    search_input.insert(0, 'type your word here') #initalize the search box and give you a hint what to do
+    search_input.insert(0, 'Type your word here...') #initalize the search box and give you a hint what to do
     search_input.configure(state=DISABLED) #disabled the search box unless you click it
     submitbuttonframe.place(x=79,y=210) #place the frame of the submit button
     submit_button.place(x=81,y=212) #place the real submit button
